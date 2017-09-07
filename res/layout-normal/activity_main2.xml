@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="20dp"
+    >
+
+    <TextView
+        android:id="@+id/barcodeValueLabel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="Barcode Value:"
+        android:textColor="@android:color/black"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        android:paddingLeft="10dp"
+        />
+
+    <TextView
+        android:id="@+id/barcodeValue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/black"
+        android:layout_marginTop="7dp"
+        android:textSize="14dp"
+        android:text="Barcode"
+        android:paddingLeft="125dp"
+        />
+
+    <CalendarView
+        android:id="@+id/calendarView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/barcodeValueLabel"
+
+        />
+    <TextView
+        android:id="@+id/label2"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:text="Select Date Type:"
+        android:textColor="@android:color/black"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        android:paddingLeft="10dp"
+        android:layout_marginTop="375dp"
+        />
+    <Spinner
+        android:id="@+id/typeValues"
+        android:layout_width="200dp"
+        android:layout_height="28dp"
+        android:layout_marginLeft="400dp"
+        android:layout_marginEnd="21dp"
+        android:layout_marginTop="372dp"
+        android:layout_alignParentEnd="true" />
+    <Button
+        android:id="@+id/update"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="428dp"
+        android:text="Update"
+        />
+
+    <Button
+        android:id="@+id/addImages"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="243dp"
+        android:layout_marginTop="429dp"
+        android:text="Add Images"
+        android:enabled="false"
+        />
+</RelativeLayout>
